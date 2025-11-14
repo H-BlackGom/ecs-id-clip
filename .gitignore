@@ -1,0 +1,17 @@
+# Gemini
+.gemini/
+.specify/
+specs/
+GEMINI.md
+
+# Universal
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Bash
+*.log
+.env*
