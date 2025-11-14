@@ -31,10 +31,10 @@ Your AWS credentials should be configured in `~/.aws/config`.
 
 ## Usage
 
-Simply run the command:
+Simply run the command from the root of the project:
 
 ```bash
-ecs-id-clip
+./src/ecs-id-clip.sh
 ```
 
 This will launch the interactive workflow:

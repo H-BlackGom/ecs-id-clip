@@ -1,12 +1,14 @@
 #!/bin/bash
 
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+
 # Source the utility functions
 # shellcheck source=src/lib/utils.sh
-source "$(dirname "$0")"/lib/utils.sh"
+source "$SCRIPT_DIR/lib/utils.sh"
 # shellcheck source=src/lib/aws_helpers.sh
-source "$(dirname "$0")"/lib/aws_helpers.sh"
+source "$SCRIPT_DIR/lib/aws_helpers.sh"
 # shellcheck source=src/lib/fzf_helpers.sh
-source "$(dirname "$0")"/lib/fzf_helpers.sh"
+source "$SCRIPT_DIR/lib/fzf_helpers.sh"
 
 # Check for required tools
 check_prerequisites "aws" "jq" "fzf"
